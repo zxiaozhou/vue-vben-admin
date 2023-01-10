@@ -26,7 +26,7 @@
   import { Badge, Table } from 'ant-design-vue';
   import type { PropType } from 'vue';
   import { reactive, watch, nextTick, ref, toRaw } from 'vue';
-  import {
+  import type {
     AnYiExtendInfoArray,
     AnYiExtendProperty,
   } from 'anyi-process-ee-antvue/dist/types/types/designercommon.d';

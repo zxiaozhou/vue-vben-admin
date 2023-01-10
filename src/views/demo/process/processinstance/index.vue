@@ -1,13 +1,14 @@
 <template>
-  <div id="app">
+  <PageWrapper title="流程实例预览">
     <AnYiBpmnPreviewInstance
       ref="diagramInstanceDomRef"
       :createHtml="getHtml"
       tagId="Activity_1s3ocxk:e63351bb-faaa-11ec-9f3a-0242ac1f090f"
     />
-  </div>
+  </PageWrapper>
 </template>
 <script lang="ts" setup>
+  import { PageWrapper } from '/@/components/Page';
   import { AnYiBpmnPreviewInstance } from 'anyi-process-ee-antvue';
   import type {
     CreateHtmlFuncArgs,

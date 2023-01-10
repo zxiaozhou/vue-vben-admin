@@ -1,9 +1,15 @@
 <template>
-  <div id="app">
-    <AnYiBpmnDesignerZeebe @change="handleChange" ref="diagramDesigner" :comps="comps" />
-  </div>
+  <PageWrapper title="zeebe建模">
+    <AnYiBpmnDesignerZeebe
+      @change="handleChange"
+      ref="diagramDesigner"
+      :comps="comps"
+      :highMargin="200"
+    />
+  </PageWrapper>
 </template>
 <script lang="ts" setup>
+  import { PageWrapper } from '/@/components/Page';
   import { ref, onMounted } from 'vue';
   import { AnYiBpmnDesignerZeebe } from 'anyi-process-ee-antvue';
   import type { BpmnDiagramInfo } from 'anyi-process-ee-antvue/dist/types/types/designercommon.d';

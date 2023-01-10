@@ -1,9 +1,15 @@
 <template>
-  <div id="app">
-    <AnYiBpmnDesignerCamunda @change="handleChange" ref="diagramDesigner" :comps="comps" />
-  </div>
+  <PageWrapper title="camunda建模">
+    <AnYiBpmnDesignerCamunda
+      @change="handleChange"
+      ref="diagramDesigner"
+      :comps="comps"
+      :highMargin="200"
+    />
+  </PageWrapper>
 </template>
 <script lang="ts" setup>
+  import { PageWrapper } from '/@/components/Page';
   import { Category } from '../components/Category';
   import { AnYiBpmnDesignerCamunda } from 'anyi-process-ee-antvue';
   import { Role } from '../components/Role';
