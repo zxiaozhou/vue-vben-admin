@@ -8,6 +8,12 @@
   </PageWrapper>
 </template>
 <script lang="ts" setup>
+  import 'bpmn-js/dist/assets/bpmn-font/css/bpmn.css';
+  import 'bpmn-js/dist/assets/bpmn-font/css/bpmn-codes.css';
+  import 'bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css';
+  import 'bpmn-js/dist/assets/bpmn-js.css';
+  import 'bpmn-js/dist/assets/diagram-js.css';
+  import 'diagram-js-minimap/assets/diagram-js-minimap.css';
   import { PageWrapper } from '/@/components/Page';
   import { AnYiBpmnPreviewInstance } from 'anyi-process-ee-antvue';
   import type {
@@ -25,13 +31,3 @@
     diagramInstanceDomRef.value.viewInstance(instancesdata.data as BpmnInstanceInfo);
   });
 </script>
-
-<style lang="less">
-  @import 'anyi-process-ee-antvue/dist/style.css';
-  @import 'bpmn-js/dist/assets/bpmn-font/css/bpmn.css';
-  @import 'bpmn-js/dist/assets/bpmn-font/css/bpmn-codes.css';
-  @import 'bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css';
-  @import 'bpmn-js/dist/assets/bpmn-js.css';
-  @import 'bpmn-js/dist/assets/diagram-js.css';
-  @import 'diagram-js-minimap/assets/diagram-js-minimap.css';
-</style>

@@ -9,6 +9,17 @@
   </PageWrapper>
 </template>
 <script lang="ts" setup>
+  import 'anyi-process-ee-antvue/dist/style.css';
+  import 'bpmn-js-color-picker/colors/color-picker.css';
+  import 'bpmn-js/dist/assets/bpmn-font/css/bpmn.css';
+  import 'bpmn-js/dist/assets/bpmn-font/css/bpmn-codes.css';
+  import 'bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css';
+  import 'bpmn-js/dist/assets/bpmn-js.css';
+  import 'bpmn-js/dist/assets/diagram-js.css';
+  import 'bpmn-js-properties-panel/dist/assets/properties-panel.css';
+  import 'bpmn-js-token-simulation/assets/css/bpmn-js-token-simulation.css';
+  import 'diagram-js-minimap/assets/diagram-js-minimap.css';
+  import 'bpmn-js-bpmnlint/dist/assets/css/bpmn-js-bpmnlint.css';
   import { PageWrapper } from '/@/components/Page';
   import { ref, onMounted } from 'vue';
   import { AnYiBpmnDesignerZeebe } from 'anyi-process-ee-antvue';
@@ -40,17 +51,3 @@
     diagramDesigner.value.createNewDiagram();
   });
 </script>
-
-<style lang="less">
-  @import 'anyi-process-ee-antvue/dist/style.css';
-  @import 'bpmn-js-color-picker/colors/color-picker.css';
-  @import 'bpmn-js/dist/assets/bpmn-font/css/bpmn.css';
-  @import 'bpmn-js/dist/assets/bpmn-font/css/bpmn-codes.css';
-  @import 'bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css';
-  @import 'bpmn-js/dist/assets/bpmn-js.css';
-  @import 'bpmn-js/dist/assets/diagram-js.css';
-  @import 'bpmn-js-properties-panel/dist/assets/properties-panel.css';
-  @import 'bpmn-js-token-simulation/assets/css/bpmn-js-token-simulation.css';
-  @import 'diagram-js-minimap/assets/diagram-js-minimap.css';
-  @import 'bpmn-js-bpmnlint/dist/assets/css/bpmn-js-bpmnlint.css';
-</style>
