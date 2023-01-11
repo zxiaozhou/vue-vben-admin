@@ -2777,10 +2777,10 @@ ant-design-vue@^3.2.12:
     vue-types "^3.0.0"
     warning "^4.0.0"
 
-anyi-process-ee-antvue@2.0.0-beta11:
-  version "2.0.0-beta11"
-  resolved "https://registry.yarnpkg.com/anyi-process-ee-antvue/-/anyi-process-ee-antvue-2.0.0-beta11.tgz#0400ca98d54a45de9b7b90b2fe774ab3498695c5"
-  integrity sha512-8g7J/Miy/XmovpgqJnlB6A33b+1ar/nv/4j1yFBvPvKGJzn7IZfAim6iE1iHplIUEOEKhg00faOFlcYMn+YNig==
+anyi-process-ee-antvue@2.0.0-beta13:
+  version "2.0.0-beta13"
+  resolved "https://registry.yarnpkg.com/anyi-process-ee-antvue/-/anyi-process-ee-antvue-2.0.0-beta13.tgz#59f0b9a5f4b9357fc3a03fd119168cc7fbc4f822"
+  integrity sha512-O28x51B2KGaNc40a1385jc7++RwMWLrhJIxXkuIN1e0lJXjiR/gfof2CYhrsNBnD+La6yA25zgB+3XnTp/MBLw==
   dependencies:
     "@ant-design/colors" "^6.0.0"
     "@ant-design/icons-vue" "^6.0.1"
