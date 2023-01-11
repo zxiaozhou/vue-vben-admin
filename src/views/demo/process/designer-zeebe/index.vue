@@ -9,6 +9,7 @@
   </PageWrapper>
 </template>
 <script lang="ts" setup>
+  import 'anyi-process-ee-antvue/dist/style.css';
   import 'bpmn-js-color-picker/colors/color-picker.css';
   import 'bpmn-js/dist/assets/bpmn-font/css/bpmn.css';
   import 'bpmn-js/dist/assets/bpmn-font/css/bpmn-codes.css';

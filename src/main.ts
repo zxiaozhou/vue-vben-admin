@@ -4,7 +4,6 @@ import '/@/design/index.less';
 import 'virtual:windi-utilities.css';
 // Register icon sprite
 import 'virtual:svg-icons-register';
-import 'anyi-process-ee-antvue/dist/style.css';
 import App from './App.vue';
 import { createApp } from 'vue';
 import { initAppConfigStore } from '/@/logics/initAppConfig';
