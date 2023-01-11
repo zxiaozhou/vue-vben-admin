@@ -29,6 +29,6 @@
     return '<scan>Nihao</scan>';
   }
   onMounted(() => {
-    diagramInstanceDomRef.value.viewInstance(instancesdata.data as BpmnInstanceInfo);
+    diagramInstanceDomRef.value.viewInstance(instancesdata.data as unknown as BpmnInstanceInfo);
   });
 </script>
