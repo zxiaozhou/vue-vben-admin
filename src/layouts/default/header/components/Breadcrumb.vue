@@ -4,10 +4,10 @@
       <template #itemRender="{ route, routes: routesMatched, paths }">
         <Icon :icon="getIcon(route)" v-if="getShowBreadCrumbIcon && getIcon(route)" />
         <span v-if="!hasRedirect(routesMatched, route)">
-          {{ t(route.name || route.meta.title) }}
+          {{ t(route.name || route.meta.title) }}1111
         </span>
         <router-link v-else to="" @click="handleClick(route, paths, $event)">
-          {{ t(route.name || route.meta.title) }}
+          {{ t(route.name || route.meta.title) }}2222
         </router-link>
       </template>
     </a-breadcrumb>
@@ -110,6 +110,7 @@
       }
 
       function handleClick(route: RouteLocationMatched, paths: string[], e: Event) {
+        console.log('-----handleClick----sdfsdfdsf');
         e?.preventDefault();
         const { children, redirect, meta } = route;
 
